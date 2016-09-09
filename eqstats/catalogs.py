@@ -60,3 +60,8 @@ def random_times(nevents, tmin = 0., tmax = 100.):
     times = np.sort(times)
 
     return times
+
+def random_magnitudes(nevents, mmin, mmax, b = 1.):
+    "generates array of length nevents of magnitude values for a GR distribution given min and max magnitudes and b"
+
+    return mmin-1./b*np.log(1.-np.random.random(nevents)*(1.-10.**(-b*(mmax-mmin))))/np.log(10.)

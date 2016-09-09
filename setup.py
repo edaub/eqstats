@@ -7,6 +7,6 @@ setup(name='eqstats',
       author='Eric Daub',
       author_email='egdaub@memphis.edu',
       packages=['eqstats'],
-      install_requires=['numpy', 'scipy'],
+      install_requires=['numpy', 'scipy', 'statsmodels'],
       test_suite='nose.collector',
       tests_require=['nose'])
